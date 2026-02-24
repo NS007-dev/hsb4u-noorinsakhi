@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Rise of Toxic Masculinity</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: #0f172a;
+            color: #f1f5f9;
+            line-height: 1.7;
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(15, 23, 42, 0.9);
+            backdrop-filter: blur(12px);
+            padding: 15px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: #38bdf8;
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 0.9rem;
+        }
+
+        section {
+            padding: 120px 10%;
+            min-height: 100vh;
+        }
+
+        .hero {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: linear-gradient(to bottom right, #0f172a, #1e293b);
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            max-width: 700px;
+            opacity: 0.8;
+        }
+
+        .btn {
+            margin-top: 30px;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 25px;
+            background: #38bdf8;
+            color: #0f172a;
+            font-weight: 600;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #0ea5e9;
+        }
+
+        .card {
+            background: #1e293b;
+            padding: 25px;
+            border-radius: 15px;
+            margin-top: 25px;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .image-placeholder {
+            width: 100%;
+            height: 300px;
+            background: url("https://about.canva.com/wp-content/uploads/sites/8/2019/03/blue.png");
+            background-size: cover;
+            background-position: center;
+            border-radius: 15px;
+            margin: 25px 0;
+        }
+
+        .grid {
+            display: grid;
+            gap: 25px;
+        }
+
+        .grid-3 {
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        }
+
+        .stat {
+            text-align: center;
+            padding: 20px;
+            background: #1e293b;
+            border-radius: 15px;
+        }
+
+        .stat h2 {
+            font-size: 2.5rem;
+            color: #38bdf8;
+        }
+
+        footer {
+            background: #020617;
+            text-align: center;
+            padding: 40px;
+            font-size: 0.8rem;
+            opacity: 0.7;
+        }
+
+        @media(max-width:768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            section {
+                padding: 100px 5%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <div><strong>@ChangeWithPurpose</strong></div>
+        <div>
+            <a href="#issue">Issue</a>
+            <a href="#stats">Statistics</a>
+            <a href="#theory">Theory</a>
+            <a href="#perspectives">Perspectives</a>
+            <a href="#works">Sources</a>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <h1>The Rise of Toxic Masculinity in the Digital Age</h1>
+        <br>
+        <h2> Website coded by Noorin Sakhi using HTML, JS, CSS </h2>
+        <br>
+        <p>
+            An exploration of how rigid gender norms shape identity, mental health,
+            violence, and inequality in the 21st century digital era.
+        </p>
+        <p style="text-align:center; color:#0ea5e9">
+            #RedefineStrength #HealthyMasculinity #MentalHealthMatters #GenderEquality #SocialChange
+        </p>
+        <button class="btn" onclick="document.getElementById('issue').scrollIntoView()">Learn More</button>
+    </section>
+
+    <section id="issue">
+        <h2>Understanding the Issue (5 W's)</h2>
+        <div class="image-placeholder"></div>
+
+        <div class="card">
+            <p><strong>Who:</strong> Mostly young men and boys searching for their identity in a digital world.</p>
+            <p><strong>What:</strong> Toxic masculinity = harmful norms that make manhood seem it is based on dominance,
+                emotional suppression, and aggression.</p>
+            <p><strong>When:</strong> These norms have existed historically but has evolved through 21st-century
+                social media.</p>
+            <p><strong>Where:</strong> Globally - especially online spaces.</p>
+            <p><strong>Why:</strong> These expectations are rooted in patriarchal systems where control is rewarded and
+                discouraging vulnerability.</p>
+        </div>
+    </section>
+
+    <section id="stats">
+        <h2>The Numbers</h2>
+
+        <div class="grid grid-3">
+
+            <div class="stat">
+                <h2 id="stat1">0</h2>
+                <p>of suicide deaths in Canada are men (Canadian Psychological Association)</p>
+            </div>
+
+            <div class="stat">
+                <h2 id="stat2">0</h2>
+                <p>Men are significantly less likely to seek mental health support (APA)</p>
+            </div>
+
+            <div class="stat">
+                <h2 id="stat3">0</h2>
+                <p>Rapid rise in online misogynistic influencer content (BBC reporting)</p>
+            </div>
+
+        </div>
+
+        <div class="card">
+            <p>
+                In Canada, approximately 75% of suicide deaths are men (Canadian Psychological Association, n.d.).
+                This highlights a serious mental health crisis linked to rigid masculine norms that discourage
+                emotional
+                expression.
+                The American Psychological Association (2019) reports that men are significantly less likely to seek
+                psychological help due to stigma and expectations of self-reliance.
+                Additionally, BBC News (2023) documents growing concern among educators about the rise of online
+                hyper-masculine
+                influencers who promote misogyny and dominance-based identity narratives.
+                These statistics show that toxic masculinity is not just a cultural idea- it has significant
+                psychological and social consequences.
+            </p>
+        </div>
+    </section>
+
+    <section id="theory">
+        <h2>Applying Social Theory</h2>
+        <div class="card">
+            <p>
+                Using <strong>Conflict Theory</strong>, toxic masculinity can be understood as a social structure that
+                maintains power hierarchies. Conflict theorists argue that dominant groups preserve power by shaping
+                cultural norms and institutions. Traditional masculine ideals - such as dominance, emotional
+                suppression,
+                and control - reinforce patriarchal systems that privilege men in authority while marginalizing women
+                and gender-diverse individuals.
+                <br><br>
+                This issue can also be examined through <strong>Socialization Theory</strong>. From early childhood,
+                boys are often rewarded for toughness and discouraged from expressing vulnerability. These learned
+                behaviors become internalized and normalized, shaping identity and emotional development.
+                <br><br>
+                From these perspectives, toxic masculinity is not simply individual behavior; it is embedded in
+                institutions such as media, education, family structures, and digital platforms. Social change
+                occurs when these systems are challenged through activism, education reform, policy development,
+                and shifts in cultural narratives about what it means to be “strong.”
+            </p>
+        </div>
+    </section>
+
+    <section id="perspectives">
+        <h2>Disciplinary Perspectives</h2>
+        <div class="grid grid-3">
+
+            <div class="card">
+                <h3>Sociologist</h3>
+                <p>1. How do institutions reinforce masculine dominance?<br><br>
+                    2. How does toxic masculinity reproduce inequality?</p>
+            </div>
+
+            <div class="card">
+                <h3>Psychologist</h3>
+                <p>1. How does emotional suppression affect mental health?<br><br>
+                    2. Why are young men vulnerable to online radicalization?</p>
+            </div>
+
+            <div class="card">
+                <h3>Anthropologist</h3>
+                <p>1. How do cultures construct masculinity differently?<br><br>
+                    2. Is toxic masculinity socially constructed?</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section>
+        <h2>Societal Reactions & Solutions</h2>
+        <div class="image-placeholder"></div>
+        <div class="card">
+            <p>
+                Public awareness surrounding rigid gender norms has grown significantly in recent years.
+                Schools are implementing social-emotional learning (SEL) programs that teach emotional literacy,
+                empathy, and healthy coping strategies. Mental health campaigns are working to reduce stigma
+                around men seeking therapy and promote open conversations about vulnerability.
+                <br><br>
+                Governments and non-profit organizations are investing in gender-based violence prevention programs
+                and digital literacy initiatives that help young people critically evaluate harmful online content.
+                On a global level, advocacy movements are challenging traditional gender stereotypes and promoting
+                healthier models of masculinity centered on respect and accountability.
+                <br><br>
+                Addressing toxic masculinity connects to the larger goals of social equity, improved mental health
+                outcomes, and safer communities. The broader significance lies in reshaping cultural expectations so
+                that identity is not constrained by harmful norms but supported through inclusivity and emotional
+                well-being.
+            </p>
+        </div>
+    </section>
+
+    <section id="works">
+        <h2>References</h2>
+        <div class="card">
+            <p>
+                American Psychological Association. (2019, January). <i>Men and mental health: What are we missing?</i>
+                Monitor on Psychology. https://www.apa.org/monitor/2019/01/ce-corner
+                <br><br>
+                BBC News. (2023, January 5). <i>Schools warn of online misogyny influence on boys</i>.
+                https://www.bbc.com/news/uk-64125045
+                <br><br>
+                Canadian Psychological Association. (n.d.). <i>Psychology works fact sheet: Suicide</i>.
+                https://cpa.ca/psychology-works-fact-sheet-suicide/
+            </p>
+        </div>
+    </section>
+    <section>
+        <div class="card" style="text-align:center;">
+            <h2>Be Part of the Change</h2>
+            <p>
+                Challenging harmful gender norms begins with conversation, education, and accountability.
+                By promoting empathy, emotional intelligence, and equality, individuals can contribute to
+                meaningful cultural transformation.
+                <br><br>
+                Change starts with redefining strength.
+            </p>
+            <p style="color:#38bdf8; margin-top:15px;">
+                #RedefineStrength #HealthyMasculinity #MentalHealthMatters #GenderEquality #SocialChange
+            </p>
+        </div>
+    </section>
+
+    <footer>
+        Noorin Sakhi |HSBB4U1 | Social Change Multimedia Assignment |
+        Toxic masculinity in the Digital Era
+    </footer>
+
+    <script>
+        function animateValue(id, start, end, duration, suffix = "") {
+            let obj = document.getElementById(id);
+            let range = end - start;
+            let current = start;
+            let increment = end > start ? 1 : -1;
+            let stepTime = Math.abs(Math.floor(duration / range));
+            let timer = setInterval(function () {
+                current += increment;
+                obj.textContent = current + suffix;
+                if (current == end) {
+                    clearInterval(timer);
+                }
+            }, stepTime);
+        }
+
+        animateValue("stat1", 0, 75, 1500, "%");
+        document.getElementById("stat2").textContent = "Lower";
+        document.getElementById("stat3").textContent = "Increasing";
+    </script>
+
+</body>
+
+</html>
